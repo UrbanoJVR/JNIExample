@@ -1,0 +1,8 @@
+Generate .o:
+
+gcc -c -fPIC -I /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/include/ -I /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/include/darwin/ com_urbanojvr_jniexample_JavaCalculator.c -o com_urbanojvr_jniexample_JavaCalculator.o
+
+Generate .so:
+
+gcc com_urbanojvr_jniexample_JavaCalculator.o -shared -o libcalculator.so
+
